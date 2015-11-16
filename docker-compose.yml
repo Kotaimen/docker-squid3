@@ -1,0 +1,10 @@
+squid:
+#  image: kotaimen/squid3
+  build: .
+  ports:
+    - "3128:3128"
+  volumes:
+    - ./squid3:/etc/squid3:ro
+    - ./cache:/var/spool/squid3:rw
+    - ./log/squid3:/var/log/squid3:rw
+  restart: always
