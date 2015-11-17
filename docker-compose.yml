@@ -1,4 +1,4 @@
-squid:
+squid3:
 #  image: kotaimen/squid3
   build: .
   ports:
